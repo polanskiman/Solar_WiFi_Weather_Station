@@ -36,7 +36,7 @@ const char* mqtt_server = "192.xxx.xxx.xx";       // MQTT Server (broker) addres
 #define sleepTimeMin (10)            // setting of deepsleep time in minutes (default: 10)
 
 // NTP
-#define NTP_SERVER      "asia.pool.ntp.org"  // Swiss NTP pool - use any in your country
+#define NTP_SERVER      "asia.pool.ntp.org"  // Asia NTP pool - use any in your country
 #define TZ              7                  // (utc+) TZ in hours
 #define DST_MN          60                 // use 60mn for summer time in some countries
 
