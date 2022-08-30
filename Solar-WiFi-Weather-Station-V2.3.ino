@@ -156,12 +156,12 @@ void setup() {
   //******Battery Voltage Monitoring*********************************************
 
   // Voltage divider R1 = 220k+100k+220k =540k and R2=100k
-  float calib_factor = 5.28; // change this value to calibrate the battery voltage
+  float calib_factor = 4.552; // change this value to calibrate the battery voltage
   unsigned long raw = analogRead(A0);
   volt = raw * calib_factor / 1024;
 
   Serial.print( "Voltage = ");
-  Serial.print(volt, 2); // print with 2 decimal places
+  Serial.print(volt, 3); // print with 3 decimal places
   Serial.println (" V");
 
   // **************Application going online**********************************
