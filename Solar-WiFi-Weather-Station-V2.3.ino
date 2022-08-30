@@ -27,6 +27,7 @@
   <Adafruit_Sensor.h>    --> Adafruit unified sensor
   <Adafruit_BME280.h>    --> Adafrout BME280 sensor
   <BlynkSimpleEsp8266.h> --> https://github.com/blynkkk/blynk-library
+  <ThingSpeak.h>         --> https://github.com/mathworks/thingspeak-arduino
   <ESP8266WiFi.h>
   <WiFiUdp.h>
   "FS.h"
