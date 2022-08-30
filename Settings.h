@@ -28,16 +28,16 @@ const char* mqtt_server = "192.xxx.xxx.xx";       // MQTT Server (broker) addres
 
 /****** Additional Settings **************************************************/
 
-#define LANGUAGE 'DE'                // either 'DE' for German or 'EN' for English
+#define LANGUAGE 'EN'                // either 'DE' for German or 'EN' for English
 
-#define TEMP_CORR (-1)               // Manual correction of temp sensor
-#define ELEVATION (130)              // Enter your elevation in m ASL to calculate rel pressure (ASL/QNH) at your place
+#define TEMP_CORR (0)               // Manual correction of temp sensor
+#define ELEVATION (4)              // Enter your elevation in m ASL to calculate rel pressure (ASL/QNH) at your place
 
 #define sleepTimeMin (10)            // setting of deepsleep time in minutes (default: 10)
 
 // NTP
-#define NTP_SERVER      "ch.pool.ntp.org"  // Swiss NTP pool - use any in your country
-#define TZ              1                  // (utc+) TZ in hours
+#define NTP_SERVER      "asia.pool.ntp.org"  // Swiss NTP pool - use any in your country
+#define TZ              7                  // (utc+) TZ in hours
 #define DST_MN          60                 // use 60mn for summer time in some countries
 
 #define TZ_SEC          ((TZ)*3600)
@@ -56,7 +56,7 @@ virtual pin 5 Dewpoint (Celcius)
 virtual pin 6 HeatIndex (Celcius)
 virtual pin 7 Zambrettis Words
 virtual pin 8 Accuracy in percent (%)
-virtual pin 9 Tend in Words
+virtual pin 9 Trend in Words
 virtual pin 10 Dewpoint Spread
 
 ThingSpeak:
@@ -72,7 +72,7 @@ Field 7: HeatIndex (Celcius)
 MQTT
 
 home/weather/solarweatherstation/tempc
-home/weather//solarweatherstation/heatindexc
+home/weather/solarweatherstation/heatindexc
 home/weather/solarweatherstation/dewpointc
 home/weather/solarweatherstation/spreadc
 home/weather/solarweatherstation/abshpa
