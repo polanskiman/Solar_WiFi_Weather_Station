@@ -187,6 +187,8 @@ void setup() {
     Serial.print(".");
   }
   Serial.println(" Wifi connected ok");
+  Serial.print("IP Address: ");
+  Serial.println(WiFi.localIP());
 
   if (App1 == "BLYNK") {
     Blynk.begin(auth, ssid, pass);
