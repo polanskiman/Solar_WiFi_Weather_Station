@@ -74,7 +74,10 @@
   - added August-Roche-Magnus approximation to automatically adjust humidity with temperature corrections
 
   updated 30/08/22 to v2.35
-  corrected Thingspeak issue v2.35
+  - corrected Thingspeak issue v2.35
+  
+  update 3/09/22 to v2.36
+  - updated to work with Blynk Iot (new Blynk). Blynk library needs to be updated to latest (v.1.1.0)
 
 
   ////  Features :  //////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -97,14 +100,17 @@
    Enter your personal settings in Settings.h !
  *                                                 *
  **************************************************/
+#define BLYNK_PRINT Serial        //This is optional and can be commented if not desired but allows to see library version etc on serial monitor
+#define BLYNK_TEMPLATE_ID ""      //Enter your Blynk Template ID
+#define BLYNK_DEVICE_NAME ""      //Enter your Blynk Device Name
 
 #include "Settings.h"
 #include "Translation.h"
 
 #include <Adafruit_Sensor.h>
 #include <Adafruit_BME280.h>
+#include <ESP8266WiFi.h>         //This library needs to be placed before <BlynkSimpleEsp8266.h> else compilation errors occur
 #include <BlynkSimpleEsp8266.h>  //https://github.com/blynkkk/blynk-library
-#include <ESP8266WiFi.h>
 #include <WiFiUdp.h>
 #include "FS.h"
 #include <EasyNTPClient.h>       //https://github.com/aharshac/EasyNTPClient
