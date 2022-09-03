@@ -13,7 +13,7 @@ const String App2 = "THINGSPEAK";    // empty string if not applicable -> "" els
 
 /****** Blink or ThingSpeak Settings ****************************************/
 
-char auth[] = ""; // Blynk Auth Token
+char auth[] = ""; // New Blynk Auth Token
 
 char ssid[] = "";                       // WiFi Router ssid
 char pass[] = "";                       // WiFi Router password
