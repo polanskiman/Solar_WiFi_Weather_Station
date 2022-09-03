@@ -83,8 +83,8 @@
 
 #include <Adafruit_Sensor.h>
 #include <Adafruit_BME280.h>
-#include <ESP8266WiFi.h>         //This library needs to be placed before <BlynkSimpleEsp8266.h> else compilation errors occur
 #include <BlynkSimpleEsp8266.h>  //https://github.com/blynkkk/blynk-library
+#include <ESP8266WiFi.h>
 #include <WiFiUdp.h>
 #include "FS.h"
 #include <EasyNTPClient.h>       //https://github.com/aharshac/EasyNTPClient
