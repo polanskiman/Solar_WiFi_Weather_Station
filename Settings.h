@@ -19,7 +19,7 @@ char ssid[] = "";                       // WiFi Router ssid
 char pass[] = "";                       // WiFi Router password
 
 unsigned long ts_ch_id = 000000;                  // Thingspeak Channel ID
-const char* ts_api_key = "";      // API write key 
+const char* ts_api_key = "";          // API write key 
 
 
 /****** MQTT Settings ********************************************************/
@@ -67,7 +67,7 @@ Field 3: Humidity (%)
 Field 4: Battery (V)
 Field 5: Absolute Pressure (hPa)
 Field 6: Dewpoint (Celcius)
-Field 7: HeatIndex (Celcius) 
+Field 7: HeatIndex (Celcius)
 
 MQTT
 
