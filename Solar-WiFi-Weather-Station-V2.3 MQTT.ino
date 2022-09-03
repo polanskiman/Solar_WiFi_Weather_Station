@@ -1,5 +1,5 @@
 /*----------------------------------------------------------------------------------------------------
-  Project Name : Solar Powered WiFi Weather Station V2.36
+  Project Name : Solar Powered WiFi Weather Station V2.35
   Features: temperature, dewpoint, dewpoint spread, heat index, humidity, absolute pressure, relative pressure, battery status and
   the famous Zambretti Forecaster (multi lingual)
   Authors: Keith Hungerford, Debasish Dutta and Marc Stähli
@@ -62,8 +62,6 @@
   - added August-Roche-Magnus approximation to automatically adjust humidity with temperature corrections
  updated 30/08/22 to v2.35
   -corrected Thingspeak communication issue
- updated 3/09/22 to v2.36
-  -updated to work with Blynk Iot (new Blynk). Blynk library needs to be updated to latest (v.1.1.0)
   
 ////  Features :  /////////////////////////////////////////////////////////////////////////////////////////////////////////////                                                                                                                   
 // 1. Connect to Wi-Fi, and upload the data to either Blynk App and/or Thingspeak and to any MQTT broker
@@ -79,9 +77,6 @@
  * Enter your personal settings in Settings.h !    *
  *                                                 *
  **************************************************/
-#define BLYNK_PRINT Serial        //This is optional and can be commented if not desired but allows to see library version etc on serial monitor
-#define BLYNK_TEMPLATE_ID ""      //Enter your Blynk Template ID
-#define BLYNK_DEVICE_NAME ""      //Enter your Blynk Device Name
 
 #include "Settings.h"
 #include "Translation.h"
